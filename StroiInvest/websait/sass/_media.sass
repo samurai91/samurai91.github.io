@@ -1,0 +1,86 @@
+/* Адаптив для сайта */
+
+@media (max-width:480px)
+	html
+		font-size: 8px
+	
+	/******************** шапка ********************/
+	.top-nav
+		.logo
+			img
+				height: 40px
+		&_btn
+			display: block
+			width: 30px
+			height: 30px
+			background-color: transparent
+			border: none
+			font-size: 18px
+			position: absolute
+			right: 10px
+			top: -35px
+			outline: none
+			
+			i
+				display: block
+
+			&:hover
+				cursor: pointer
+
+		&_menu
+			flex-direction: column
+			display: none
+			
+			li
+				line-height: 2
+
+				a
+					&::after
+						display: none
+
+			&__active
+				display: flex
+				margin-bottom: 0
+	
+		/************** сайт-бар **************/
+	.left-sidebar
+		margin-top: 20px
+		&_btn
+			display: block
+			font-size: 1.6rem
+			background-color: $white
+			padding: 15px
+			padding-left: 30px
+			position: relative
+		
+			&::after
+				content: ''
+				display: inline-block
+				position: absolute
+				top: 50%
+				margin-top: -10px
+				right: 15px
+				width: 15px
+				height: 15px
+				border-bottom: 2px solid  $dark
+				border-right: 2px solid  $dark
+				transform: rotate(45deg)
+		
+		&_menu
+			display: none
+			&__active
+				display: block
+
+			/************ обьекты ************/
+		&_object
+			display: none
+
+	.btn
+		margin-top: 17px
+		padding: 20px 40px
+		font-size: 2rem
+
+		&-primary
+			
+			&:hover
+				background-color: $active-color

@@ -1,0 +1,68 @@
+/*****************    footer    *****************/
+.footer
+	background-color: $dark
+	margin-top: 59px
+	padding: 59px 0
+	color: $footer-text
+
+	&-policy-link
+		font-size: 1.2rem
+		font-size: 0.85rem
+
+	a
+		font-size: 1.4rem
+		color: $footer-text
+		text-decoration: none
+	
+		&:hover
+			color: $white
+
+	small
+		display: block
+		margin-top: 56px
+		line-height: 16px
+		font-size: 0.66rem
+		margin-right: 100px
+
+	ul
+		padding: 0
+		list-style: none
+
+
+		li
+			line-height: 2.3rem
+
+	&-contacts
+		text-align: right
+		&_phone
+			font-size: 2rem
+			color: $active-color
+			font-weight: 400
+
+	.p
+		font-size: 1.4rem
+		margin-bottom: 10px
+	
+
+	&-social-links
+		@extend .footer-contacts
+
+		li
+			display: inline-block
+			a
+				display: inline-block
+				width: 32px
+				height: 32px
+				background-color: rgba($white, 0.1)
+				text-align: center
+				border-radius: 50%
+				padding-top: 7%
+				margin-left: 25px
+				margin-top: 20px
+				transition: all 0.2s
+
+				&:hover
+					background-color: rgba($white, 0.9)
+					color: $dark
+
+		
